@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopflare | Modern E-commerce UI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.4/css/all.min.css"
+      integrity="sha512-p8fIdXfXW3QmO1qYVz4jgKcPT2ZL8+NQgrWPn+ztSTvQ4f/5uXfDpDPHNeXK7X1XKlW3s93Kq4u+Pdm4W9WJlA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="brand-bar">
+          <a href="#" class="brand-logo">
+            <span class="brand-mark">S</span>hopflare
+          </a>
+          <nav class="site-nav">
+            <a href="#featured">Featured</a>
+            <a href="#collections">Collections</a>
+            <a href="#reviews">Reviews</a>
+          </nav>
+          <div class="header-actions">
+            <button class="search-toggle" aria-label="Open search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <button class="cart-button" id="cartBtn" aria-label="Open cart">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <span class="cart-count" id="cartCount">0</span>
+            </button>
+          </div>
+        </div>
+
+        <section class="hero-panel">
+          <div class="hero-text">
+            <span class="eyebrow">Premium Lifestyle Store</span>
+            <h1>Experience next-level shopping with stunning deals and smart buys.</h1>
+            <p>
+              Discover beautifully curated products, fast cart interactions, and a polished
+              responsive experience built for your B.Tech project showcase.
+            </p>
+            <div class="hero-actions">
+              <a href="#collections" class="button button-primary">Browse Collections</a>
+              <a href="#featured" class="button button-secondary">View Bestsellers</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="hero-card">
+              <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=900&q=80" alt="Featured product" />
+              <div class="hero-card-body">
+                <div>
+                  <h3>Urban Essentials Pack</h3>
+                  <p>Curated daily essentials designed for students and professionals.</p>
+                </div>
+                <span class="tag">Best Seller</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </header>
+
+      <main>
+        <section class="category-strip" id="collections">
+          <div class="category-card category-card-soft">
+            <i class="fa-solid fa-headphones-simple"></i>
+            <h3>Audio Gear</h3>
+            <p>High-quality sound, smart design.</p>
+          </div>
+          <div class="category-card category-card-soft">
+            <i class="fa-solid fa-laptop"></i>
+            <h3>Work Essentials</h3>
+            <p>Tools for productivity and study.</p>
+          </div>
+          <div class="category-card category-card-soft">
+            <i class="fa-solid fa-shoe-prints"></i>
+            <h3>Active Fashion</h3>
+            <p>Comfortable wear for everyday motion.</p>
+          </div>
+          <div class="category-card category-card-soft">
+            <i class="fa-solid fa-gift"></i>
+            <h3>Gifts & Accessories</h3>
+            <p>Stylish picks for every budget.</p>
+          </div>
+        </section>
+
+        <section class="shop-section" id="featured">
+          <div class="section-header">
+            <div>
+              <span class="eyebrow">Featured collection</span>
+              <h2>Smart picks for modern shoppers</h2>
+            </div>
+            <div class="filter-controls">
+              <button class="filter-btn active" data-category="all">All</button>
+              <button class="filter-btn" data-category="audio">Audio</button>
+              <button class="filter-btn" data-category="work">Work</button>
+              <button class="filter-btn" data-category="fashion">Fashion</button>
+            </div>
+          </div>
+
+          <div class="search-panel">
+            <input id="searchInput" type="search" placeholder="Search products, brands, or categories" />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+
+          <div class="product-grid" id="productGrid"></div>
+        </section>
+
+        <section class="feature-row">
+          <article class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-shipping-fast"></i></div>
+            <h3>Fast Delivery</h3>
+            <p>Get your order shipped quickly with live tracking support.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-handshake-simple"></i></div>
+            <h3>Safe Payments</h3>
+            <p>Secure checkout with a clean and user-friendly flow.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-star"></i></div>
+            <h3>Top Rated</h3>
+            <p>Every product is reviewed and handpicked for quality.</p>
+          </article>
+        </section>
+
+        <section class="testimonial-section" id="reviews">
+          <div class="testimonial-text">
+            <span class="eyebrow">Student project</span>
+            <h2>Designed to impress in every evaluation.</h2>
+            <p>
+              This sample store demonstrates polished UI design, responsive layout, interactive
+              JavaScript, and an appealing e-commerce structure for college-level presentation.
+            </p>
+          </div>
+          <div class="testimonial-cards">
+            <div class="testimonial-card">
+              <p>“This online store layout looks powerful and professional—perfect for academic projects.”</p>
+              <h4>Rahul, B.Tech Student</h4>
+            </div>
+            <div class="testimonial-card">
+              <p>“The cart interaction and product filtering make the site feel like a real shopping experience.”</p>
+              <h4>Neha, Product Design</h4>
+            </div>
+          </div>
+        </section>
+
+        <section class="newsletter-section">
+          <div>
+            <h2>Get notified for limited offers.</h2>
+            <p>Enter your email and stay updated with new arrivals, discounts, and curated collections.</p>
+          </div>
+          <form class="newsletter-form" onsubmit="return false">
+            <input type="email" placeholder="Your best email" required />
+            <button type="submit" class="button button-primary">Subscribe</button>
+          </form>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-logo">Shopflare</div>
+        <p>Built for a polished student presentation with HTML, CSS, and JavaScript.</p>
+        <div class="footer-links">
+          <a href="#">Help Center</a>
+          <a href="#">Contact</a>
+          <a href="#">Privacy</a>
+        </div>
+      </footer>
+    </div>
+
+    <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+      <div class="cart-header">
+        <div>
+          <h3>Your Cart</h3>
+          <p>Smart shopping, ready to checkout.</p>
+        </div>
+        <button class="close-cart" id="closeCartBtn" aria-label="Close cart">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-summary">
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <strong id="cartTotal">$0.00</strong>
+        </div>
+        <button class="button button-primary button-block">Proceed to Checkout</button>
+      </div>
+    </aside>
+
+    <div class="modal-overlay" id="modalOverlay" aria-hidden="true">
+      <div class="quickview-modal" id="quickViewModal">
+        <button class="modal-close" id="closeModalBtn" aria-label="Close product view">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="modal-content">
+          <img id="modalImage" src="" alt="Product quick view" />
+          <div class="modal-info">
+            <span class="eyebrow" id="modalTag"></span>
+            <h3 id="modalName"></h3>
+            <p id="modalDesc"></p>
+            <div class="modal-price" id="modalPrice"></div>
+            <button class="button button-primary" id="modalAddBtn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
